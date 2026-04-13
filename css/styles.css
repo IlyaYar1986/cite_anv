@@ -455,6 +455,12 @@ input, textarea { font: inherit; }
   gap: 24px;
   margin-top: 0;
 }
+
+/* Safety: prevent animation libraries from leaving cards invisible */
+.pain__grid > .pain__card {
+  opacity: 1 !important;
+  transform: none !important;
+}
 @media (min-width: 768px) {
   .pain__grid { grid-template-columns: 1fr 1fr; }
 }
@@ -855,6 +861,12 @@ input, textarea { font: inherit; }
 .services__grid {
   display: grid;
   gap: 24px;
+}
+
+/* Safety: prevent animation libraries from leaving cards invisible */
+.services__grid > .service-card {
+  opacity: 1 !important;
+  transform: none !important;
 }
 @media (min-width: 768px) {
   .services__grid { grid-template-columns: 1fr 1fr; align-items: start; }

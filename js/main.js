@@ -256,6 +256,11 @@ function initTabs() {
         p.classList.toggle('tabs__panel--active', match);
         p.hidden = !match;
       });
+
+      // Some elements inside tabs use ScrollTrigger. Refresh after DOM visibility changes.
+      if (typeof ScrollTrigger !== 'undefined') {
+        requestAnimationFrame(() => ScrollTrigger.refresh());
+      }
     });
   });
 }
@@ -352,47 +357,30 @@ function initGSAP() {
   }
 
   // Generic fade-up elements
-  document.querySelectorAll('[data-anim="fade-up"]').forEach(el => {
+  // Avoid double-animating elements that already have dedicated animations below.
+  document.querySelectorAll(
+    '[data-anim="fade-up"]:not(.pain__card):not(.service-card):not(.method__pillar)'
+  ).forEach(el => {
     const delay = parseFloat(el.dataset.delay || 0);
-    gsap.from(el, {
+    gsap.fromTo(el,
+      { y: 32, opacity: 0 },
+      {
       scrollTrigger: {
         trigger: el,
         start: 'top 88%',
         once: true,
       },
-      y: 32,
-      opacity: 0,
       duration: 0.8,
       delay,
       ease: 'power3.out',
+      immediateRender: false,
+      clearProps: 'transform,opacity',
     });
   });
 
-  // Pain cards — stagger
-  const painCards = document.querySelectorAll('.pain__card');
-  if (painCards.length) {
-    gsap.from(painCards, {
-      scrollTrigger: { trigger: '.pain__grid', start: 'top 85%', once: true },
-      y: 48,
-      opacity: 0,
-      duration: 0.9,
-      stagger: 0.15,
-      ease: 'power3.out',
-    });
-  }
-
-  // Service cards
-  const serviceCards = document.querySelectorAll('.service-card');
-  if (serviceCards.length) {
-    gsap.from(serviceCards, {
-      scrollTrigger: { trigger: '.services__grid', start: 'top 85%', once: true },
-      y: 48,
-      opacity: 0,
-      duration: 0.9,
-      stagger: 0.15,
-      ease: 'power3.out',
-    });
-  }
+  // NOTE: Avoid animating grids as a group.
+  // In some browser/scroll states this can leave one of the cards stuck at opacity: 0.
+  // Cards still have their own hover effects, and the rest of the page keeps scroll animations.
 
   // Method pillars
   const pillars = document.querySelectorAll('.method__pillar');
