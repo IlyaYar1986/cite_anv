@@ -7,16 +7,21 @@
   <meta name="description" content="Переведём ваш бизнес из «пилотного чистилища» в 5% компаний, реально зарабатывающих на ИИ. Бесплатная стратегическая сессия для C-level.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://anv-ai.ru/">
-  <meta property="og:title" content="ANV-Ai — AI-консалтинг для бизнеса">
-  <meta property="og:description" content="95% GenAI-пилотов не доходят до прибыли. Мы знаем, как войти в 5% лидеров.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ANV-Ai">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="ANV-Ai — AI-консалтинг для бизнеса">
+  <meta property="og:description" content="95% GenAI-пилотов не доходят до прибыли. Мы знаем, как войти в 5% лидеров. Бесплатная стратегическая сессия для C-level.">
   <meta property="og:url" content="https://anv-ai.ru/">
-  <meta property="og:image" content="https://anv-ai.ru/assets/favicon.svg">
+  <meta property="og:image" content="https://anv-ai.ru/assets/og-cover.svg">
   <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ANV-Ai — AI-консалтинг: 95% пилотов не доходят до прибыли, мы про те 5%, что окупаются">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ANV-Ai — AI-консалтинг для бизнеса">
-  <meta name="twitter:description" content="95% GenAI-пилотов не доходят до прибыли. Мы знаем, как войти в 5% лидеров.">
-  <meta name="twitter:image" content="https://anv-ai.ru/assets/favicon.svg">
+  <meta name="twitter:description" content="95% GenAI-пилотов не доходят до прибыли. Мы знаем, как войти в 5% лидеров. Бесплатная стратегическая сессия для C-level.">
+  <meta name="twitter:image" content="https://anv-ai.ru/assets/og-cover.svg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,13 +33,79 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": ["Organization", "ProfessionalService"],
           "@id": "https://anv-ai.ru/#org",
           "name": "ANV-Ai",
           "url": "https://anv-ai.ru/",
           "logo": {
             "@type": "ImageObject",
             "url": "https://anv-ai.ru/assets/favicon.svg"
+          },
+          "image": "https://anv-ai.ru/assets/og-cover.svg",
+          "description": "AI-консалтинг для бизнеса: ИИ-аудит, методология 10·20·70, внедрение GenAI без «пилотного чистилища». Локальные решения на российских серверах.",
+          "slogan": "Из пилотного чистилища — в 5% лидеров, зарабатывающих на ИИ",
+          "areaServed": [
+            { "@type": "Country", "name": "Россия" },
+            { "@type": "Country", "name": "Беларусь" },
+            { "@type": "Country", "name": "Казахстан" }
+          ],
+          "serviceType": [
+            "AI-консалтинг",
+            "ИИ-аудит",
+            "Внедрение GenAI",
+            "Стратегия AI-трансформации",
+            "Корпоративные базы знаний"
+          ],
+          "priceRange": "₽₽₽",
+          "sameAs": [
+            "https://t.me/SmitAnin"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "availableLanguage": ["Russian"],
+            "url": "https://anv-ai.ru/#contact"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Форматы работы",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Аудит «Лайт»",
+                "description": "Фокусный разбор одной функции или отдела. Поиск 2–3 задач с быстрым ROI и дорожная карта внедрения. Горизонт окупаемости до 3 месяцев.",
+                "url": "https://anv-ai.ru/services/ai-audit-light.html",
+                "priceCurrency": "RUB",
+                "availability": "https://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "ИИ-аудит «Лайт»",
+                  "serviceType": "AI-консалтинг"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Комплексный аудит",
+                "description": "Глубокий редизайн всей операционной цепочки и IT-ландшафта, стратегия AI-driven трансформации для масштабирования.",
+                "url": "https://anv-ai.ru/services/ai-audit-full.html",
+                "priceCurrency": "RUB",
+                "availability": "https://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Комплексный ИИ-аудит",
+                  "serviceType": "AI-консалтинг"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Стратегическая сессия",
+                "description": "Бесплатная 60-минутная стратегическая сессия для C-level: где ИИ даст максимальный ROI, какие риски вы несёте сегодня и с чего начать.",
+                "url": "https://anv-ai.ru/#contact",
+                "price": "0",
+                "priceCurrency": "RUB",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
           }
         },
         {
@@ -53,7 +124,83 @@
           "description": "Переведём ваш бизнес из «пилотного чистилища» в 5% компаний, реально зарабатывающих на ИИ. Бесплатная стратегическая сессия для C-level.",
           "isPartOf": { "@id": "https://anv-ai.ru/#website" },
           "about": { "@id": "https://anv-ai.ru/#org" },
+          "primaryImageOfPage": "https://anv-ai.ru/assets/og-cover.svg",
           "inLanguage": "ru-RU"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://anv-ai.ru/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Что такое ИИ-аудит и зачем он нужен бизнесу?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ИИ-аудит — это системная диагностика процессов, данных и людей, которая определяет, где искусственный интеллект даст бизнесу реальную прибыль, а где внедрение приведёт к сливу бюджета. Мы смотрим не только на технологии (10%), но прежде всего на процессы (20%) и людей (70%) — именно поэтому 95% пилотов проваливаются, а наши клиенты попадают в 5% прибыльных."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чем «Лайт-аудит» отличается от комплексного?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Лайт-аудит — фокусный разбор одной функции или отдела: ищем 2–3 задачи с быстрым ROI и выдаём дорожную карту. Окупается за 3 месяца. Комплексный аудит — глубокий редизайн всей операционной цепочки и IT-ландшафта, стратегия AI-driven трансформации и сопровождение внедрения. Подходит компаниям, готовым к масштабным изменениям."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Можно ли работать с ИИ без передачи данных за рубеж?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да. Мы строим локальные (on-premise) решения на российских серверах: корпоративные базы знаний, RAG-системы, автономную транскрибацию переговоров. Используем открытые LLM, YandexGPT и GigaChat — без передачи конфиденциальных документов в публичные зарубежные облака."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Что такое «теневой ИИ» и почему это риск?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Теневой ИИ — ситуация, когда сотрудники массово используют личные подписки ChatGPT, Claude и других сервисов для рабочих задач. По данным исследований, это происходит у 90% компаний. Риск — утечка корпоративных документов, персональных данных клиентов и коммерческой тайны в публичные модели. Аудит выявляет эти процессы и переводит их в управляемую корпоративную среду."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Почему 95% GenAI-пилотов не доходят до прибыли?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "По данным MIT и BCG, основные причины: отсутствие интеграции с реальными бизнес-процессами, нехватка внутренних компетенций, сопротивление команды и инвестиции в технологии вместо людей. Мы применяем правило 10·20·70: 10% бюджета — технологии, 20% — процессы, 70% — люди. Такой подход выводит пилот из чистилища."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "За какой срок ИИ начнёт окупаться?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "При правильном выборе задачи по методологии Лайт-аудита первые измеримые результаты появляются через 4–6 недель после старта, а полный возврат инвестиций — в горизонте 3 месяцев. Для комплексных трансформаций горизонт ROI — 6–12 месяцев, но и масштаб эффекта кратно больше."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "С какими отделами вы работаете?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Бэк-офис (−40% рутины, −60% времени обработки), продажи (×2 время с клиентом, +30% win-rate, автозаполнение CRM), маркетинг (×3 объём контента, +25% конверсия, ИИ-сегментация). Также внедряем ИИ-ассистентов, симуляторы для обучения, автоматизацию финансового аудита и анализ конкурентов."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Какие технологии вы используете?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Мы подбираем стек под задачу: YandexGPT и GigaChat для on-premise сценариев в РФ, открытые LLM (Llama, Mistral, Qwen), RAG-архитектуры для корпоративных баз знаний, цифровые аватары для видео, автономных агентов на LangChain и LlamaIndex, локальные системы транскрибации. Подробнее — на странице «Технологический стек»."
+              }
+            }
+          ]
         }
       ]
     }
@@ -67,7 +214,7 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="/" class="nav__logo" aria-label="ANV-Ai — на главную">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
           <path d="M10 22L16 10L22 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M12 18H20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
@@ -83,14 +230,18 @@
 
       <div class="nav__links" id="nav-links">
         <a href="#methodology" class="nav__link">Методология</a>
-        <a href="#departments" class="nav__link">Отделы</a>
+        <a href="#competencies" class="nav__link">Компетенции</a>
         <a href="#services" class="nav__link">Услуги</a>
+        <a href="#stack" class="nav__link">Стек</a>
+        <a href="/cases/" class="nav__link">Кейсы</a>
+        <a href="/blog/" class="nav__link">Блог</a>
+        <a href="#faq" class="nav__link">FAQ</a>
         <a href="#contact" class="nav__link">Аудит</a>
       </div>
 
       <a href="#contact" class="btn btn--sm btn--primary nav__cta">Получить аудит</a>
 
-      <button class="nav__burger" id="nav-burger" aria-label="Меню">
+      <button class="nav__burger" id="nav-burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -353,23 +504,23 @@
 
       <div class="tabs" data-anim="fade-up" data-delay="0.2">
         <div class="tabs__nav" role="tablist">
-          <button class="tabs__btn tabs__btn--active" role="tab" data-tab="backoffice">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+          <button class="tabs__btn tabs__btn--active" type="button" role="tab" id="tabbtn-backoffice" data-tab="backoffice" aria-selected="true" aria-controls="tab-backoffice">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
             Бэк-офис
           </button>
-          <button class="tabs__btn" role="tab" data-tab="sales">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 13L7 8L10 11L16 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 5H16V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <button class="tabs__btn" type="button" role="tab" id="tabbtn-sales" data-tab="sales" aria-selected="false" aria-controls="tab-sales" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 13L7 8L10 11L16 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 5H16V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Продажи
           </button>
-          <button class="tabs__btn" role="tab" data-tab="marketing">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5V9L12 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <button class="tabs__btn" type="button" role="tab" id="tabbtn-marketing" data-tab="marketing" aria-selected="false" aria-controls="tab-marketing" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5V9L12 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             Маркетинг
           </button>
         </div>
 
         <div class="tabs__content">
 
-          <div class="tabs__panel tabs__panel--active" id="tab-backoffice" role="tabpanel">
+          <div class="tabs__panel tabs__panel--active" id="tab-backoffice" role="tabpanel" aria-labelledby="tabbtn-backoffice" tabindex="0">
             <div class="tabs__panel-inner">
               <div class="tabs__panel-text">
                 <div class="tabs__panel-tag">Самый быстрый ROI</div>
@@ -402,7 +553,7 @@
             </div>
           </div>
 
-          <div class="tabs__panel" id="tab-sales" role="tabpanel" hidden>
+          <div class="tabs__panel" id="tab-sales" role="tabpanel" aria-labelledby="tabbtn-sales" tabindex="0" hidden>
             <div class="tabs__panel-inner">
               <div class="tabs__panel-text">
                 <div class="tabs__panel-tag">Рост выручки</div>
@@ -435,7 +586,7 @@
             </div>
           </div>
 
-          <div class="tabs__panel" id="tab-marketing" role="tabpanel" hidden>
+          <div class="tabs__panel" id="tab-marketing" role="tabpanel" aria-labelledby="tabbtn-marketing" tabindex="0" hidden>
             <div class="tabs__panel-inner">
               <div class="tabs__panel-text">
                 <div class="tabs__panel-tag">Масштаб без роста команды</div>
@@ -469,6 +620,130 @@
           </div>
 
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COMPETENCIES
+  ═══════════════════════════════════════════ -->
+  <section class="competencies section" id="competencies">
+    <div class="container">
+      <div class="section-label" data-anim="fade-up">Наши компетенции</div>
+      <h2 class="section-h2" data-anim="fade-up" data-delay="0.1">
+        Практические направления,<br class="br-desktop"> которые мы закрываем под ключ
+      </h2>
+      <p class="section-sub" data-anim="fade-up" data-delay="0.15">
+        От безопасных локальных внедрений до контента, продаж и аналитики — единый стек ИИ под задачи вашего бизнеса.
+      </p>
+
+      <div class="competencies__grid">
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Локальные базы знаний</h3>
+          <p class="pain__text">Развертывание локальных корпоративных баз знаний на российских серверах для безопасной работы с конфиденциальными документами и регламентами компании.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Боты в мессенджерах</h3>
+          <p class="pain__text">Создание интеллектуальных ботов в мессенджерах на основе корпоративной базы знаний для автоматизации клиентской поддержки и продаж.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">ИИ-симуляторы для продаж</h3>
+          <p class="pain__text">Разработка интерактивных ИИ-симуляторов для тренировки менеджеров по продажам, отработки возражений и адаптации новых сотрудников.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Контент-заводы для блогов</h3>
+          <p class="pain__text">Настройка автономных контент-заводов для блогов с автоматической генерацией оптимизированных текстов, визуального оформления и публикацией по расписанию.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">ИИ под психологию покупателя</h3>
+          <p class="pain__text">Обучение специализированных ИИ-агентов на закрытых базах по психологии покупателя для создания высококонверсионных рекламных материалов и лендингов.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Мета-исследования рынка</h3>
+          <p class="pain__text">Проведение глубоких мета-исследований рынка и конкурентов с одновременным использованием нескольких продвинутых нейросетей для получения очищенных аналитических данных.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Видео с цифровыми аватарами</h3>
+          <p class="pain__text">Производство кинематографичных видеороликов с использованием цифровых аватаров и сохранением единой стилистики для маркетинговых кампаний бизнеса.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Автопостинг в соцсети</h3>
+          <p class="pain__text">Организация систем автоматического отложенного постинга коротких сгенерированных видеороликов с нейроописаниями сразу во все популярные социальные сети.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Локальная транскрибация</h3>
+          <p class="pain__text">Внедрение систем локальной автономной транскрибации конфиденциальных коммерческих переговоров с последующим извлечением ключевых договоренностей без передачи данных в интернет.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Прототипы без классической команды</h3>
+          <p class="pain__text">Быстрая разработка прототипов цифровых продуктов и веб-приложений с использованием генерации кода без привлечения классической команды программистов.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Презентации в стиле бренда</h3>
+          <p class="pain__text">Программная генерация профессиональных презентаций с точным копированием визуального стиля бренда и возможностью развертывания в виде интерактивных веб-страниц.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Анализ сообществ и чатов</h3>
+          <p class="pain__text">Глубокий нейросетевой анализ выгруженных профильных сообществ и чатов для выявления болей целевой аудитории, скрытых трендов и анализа реакции рынка.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Автономные боты продаж</h3>
+          <p class="pain__text">Внедрение автономных ботов для продаж и консультаций на сайте или в мессенджерах. Искусственный интеллект общается с клиентами строго по загруженной корпоративной базе знаний, ведёт их по скрипту продаж и консультирует по тарифам без участия менеджера.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Виртуальный ассистент</h3>
+          <p class="pain__text">Интеграция личного виртуального ассистента для автоматизации рутины. Такой помощник управляет календарём, разбирает входящую почту, ставит задачи и ищет информацию в интернете по голосовым или текстовым запросам пользователя.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Аудит счетов и претензии</h3>
+          <p class="pain__text">Автоматизация финансового аудита счетов. Нейросеть сверяет выставленные подрядчиками счета с утверждённым бюджетом и протоколами встреч, находит скрытые комиссии или услуги, от которых компания ранее отказалась. После этого система способна самостоятельно сформировать претензионные письма подрядчикам.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Конкуренты и рынок</h3>
+          <p class="pain__text">Глубокий анализ конкурентов и рынка. Автономные агенты способны самостоятельно переходить по сайтам конкурентов, изучать их услуги, собирать реальные жалобы клиентов на профильных форумах или платформах отзывов и формировать сводные аналитические таблицы с указанием слабых мест.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Конвейер маркетинговых материалов</h3>
+          <p class="pain__text">Разработка конвейера для создания маркетинговых материалов. Связка нейросетей автоматически ищет актуальную информацию в интернете, пишет тексты постов или статей и генерирует уникальные изображения, сохраняя заданный стиль.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Персонализация B2B-рассылок</h3>
+          <p class="pain__text">Персонализация рассылок для корпоративных продаж. Искусственный интеллект автоматически исследует каждую потенциальную компанию по заданным критериям и пишет индивидуальные коммерческие предложения с персональным обращением к руководителю, сохраняя их как черновики в почте менеджера.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Контроль качества ответов</h3>
+          <p class="pain__text">Автоматический контроль качества работы сотрудников отдела продаж или поддержки. Система анализирует переписку менеджеров с клиентами, присваивает статусы ответам и выявляет, где сотрудник предложил реальное решение проблемы, а где использовал формальную отписку.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Медиаконтент без съёмок</h3>
+          <p class="pain__text">Создание визуального и медийного контента без студийных съёмок. Использование специализированных моделей позволяет за секунды генерировать фотореалистичные рекламные изображения продуктов, создавать кинематографичные видеоролики и профессионально озвучивать аудиоматериалы.</p>
+        </article>
+
+        <article class="pain__card competencies__card">
+          <h3 class="pain__title">Лиды среди растущих компаний</h3>
+          <p class="pain__text">Система поиска быстрорастущих компаний для генерации лидов. Нейросеть анализирует открытые источники по заданным индикаторам роста и формирует интерактивные дашборды с потенциальными клиентами, включая готовые шаблоны писем для связи с ними.</p>
+        </article>
+
       </div>
     </div>
   </section>
@@ -544,6 +819,245 @@
           </ul>
           <a href="#contact" class="btn btn--primary btn--full">Обсудить полный аудит</a>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TECHNOLOGY STACK
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="section-label" data-anim="fade-up">Технологический стек</div>
+      <h2 class="section-h2" data-anim="fade-up" data-delay="0.1">
+        Российские и open-source модели —<br class="br-desktop"> без утечки данных за рубеж
+      </h2>
+      <p class="section-sub" data-anim="fade-up" data-delay="0.15">
+        Подбираем инструменты под вашу задачу и контур безопасности.
+        Импортозамещение, on-premise развёртывание и работа с конфиденциальными документами.
+      </p>
+
+      <div class="stack__grid">
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">Я</span>
+            <h3 class="stack__title">YandexGPT &amp; YandexCloud</h3>
+          </div>
+          <p class="stack__text">
+            Используем YandexGPT, YandexART и модели YandexCloud Foundation для on-premise
+            сценариев в РФ. Соответствие 152-ФЗ, предсказуемая цена в рублях, размещение
+            в российских дата-центрах.
+          </p>
+          <span class="stack__tag">Импортозамещение</span>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">G</span>
+            <h3 class="stack__title">GigaChat (Сбер)</h3>
+          </div>
+          <p class="stack__text">
+            Корпоративные ассистенты, RAG-поиск по внутренним регламентам и ИИ-консультанты
+            для поддержки клиентов. GigaChat Pro и GigaChat API подходят для зрелых сценариев
+            с требованиями к локализации.
+          </p>
+          <span class="stack__tag">Российский LLM</span>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">Λ</span>
+            <h3 class="stack__title">Open-source LLM</h3>
+          </div>
+          <p class="stack__text">
+            Llama 3, Mistral, Qwen, DeepSeek — разворачиваем open-source модели на ваших GPU
+            (on-premise). Это даёт полный контроль над весами, приватностью и стоимостью
+            инференса для чувствительных корпоративных задач.
+          </p>
+          <span class="stack__tag">On-premise</span>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">R</span>
+            <h3 class="stack__title">RAG и векторные БД</h3>
+          </div>
+          <p class="stack__text">
+            Строим корпоративные базы знаний на архитектуре Retrieval-Augmented Generation:
+            Qdrant, Weaviate, pgvector. ИИ отвечает строго по вашим регламентам и документам,
+            без галлюцинаций и утечки данных.
+          </p>
+          <span class="stack__tag">RAG-архитектура</span>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">A</span>
+            <h3 class="stack__title">AI-агенты и оркестрация</h3>
+          </div>
+          <p class="stack__text">
+            Автономные агенты на LangChain, LlamaIndex, n8n и собственных оркестраторах:
+            маршрутизация задач, вызов инструментов, многошаговые цепочки рассуждений для
+            автоматизации операционных процессов.
+          </p>
+          <span class="stack__tag">Автономные агенты</span>
+        </article>
+
+        <article class="stack__card">
+          <div class="stack__head">
+            <span class="stack__badge">V</span>
+            <h3 class="stack__title">Видео, голос, аватары</h3>
+          </div>
+          <p class="stack__text">
+            Цифровые аватары, клонирование голоса, локальная транскрибация переговоров
+            (Whisper), кинематографичные ролики для маркетинга — полный медиапродакшен
+            без студийных съёмок.
+          </p>
+          <span class="stack__tag">Генеративное видео</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CASES & BLOG PROMO
+  ═══════════════════════════════════════════ -->
+  <section class="section section--dark" id="library">
+    <div class="container">
+      <div class="section-label" data-anim="fade-up">Материалы и кейсы</div>
+      <h2 class="section-h2" data-anim="fade-up" data-delay="0.1">
+        Что почитать, пока вы не на&nbsp;сессии
+      </h2>
+      <p class="section-sub" data-anim="fade-up" data-delay="0.15">
+        Разбираем проекты, делимся методологией и показываем, как ИИ реально работает
+        в российском бизнесе — без маркетингового тумана.
+      </p>
+
+      <div class="promo__grid">
+
+        <a href="/cases/" class="promo__card" data-anim="fade-up" data-delay="0.15">
+          <span class="promo__tag">Кейсы</span>
+          <h3 class="promo__title">Истории клиентов с цифрами ROI</h3>
+          <p class="promo__text">
+            Обезличенные разборы проектов: контекст, архитектура, барьеры и
+            конкретный финансовый результат в рублях. Публикуем по мере согласования
+            с клиентами под NDA.
+          </p>
+          <ul class="promo__list">
+            <li>Производство, 800+ сотрудников: RAG на YandexGPT</li>
+            <li>B2B-продажи: +32% win-rate, ×2 времени с клиентом</li>
+            <li>Финансовый аудит: автоматизация претензий подрядчикам</li>
+          </ul>
+          <span class="promo__cta">
+            Смотреть кейсы
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="/blog/" class="promo__card promo__card--violet" data-anim="fade-up" data-delay="0.2">
+          <span class="promo__tag">Блог</span>
+          <h3 class="promo__title">Методология, практика и разборы GenAI</h3>
+          <p class="promo__text">
+            Статьи команды о внедрении ИИ в российский бизнес: правило 10·20·70,
+            выбор между YandexGPT, GigaChat и open-source, типовые ошибки и ROI-расчёты
+            по отраслям.
+          </p>
+          <ul class="promo__list">
+            <li>Почему 95% GenAI-пилотов не доходят до прибыли</li>
+            <li>YandexGPT vs GigaChat vs open-source: как выбрать</li>
+            <li>Теневой ИИ: как найти ChatGPT в корпоративной команде</li>
+          </ul>
+          <span class="promo__cta">
+            Открыть блог
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-label" data-anim="fade-up">Частые вопросы</div>
+      <h2 class="section-h2" data-anim="fade-up" data-delay="0.1">
+        Отвечаем прямо, без маркетингового тумана
+      </h2>
+
+      <div class="faq__wrap" data-anim="fade-up" data-delay="0.15">
+
+        <details class="faq__item">
+          <summary class="faq__summary">Что такое ИИ-аудит и зачем он нужен бизнесу?</summary>
+          <div class="faq__body">
+            <p>ИИ-аудит — это системная диагностика процессов, данных и людей, которая определяет, где искусственный интеллект даст бизнесу реальную прибыль, а где внедрение приведёт к сливу бюджета.</p>
+            <p>Мы смотрим не только на технологии (10%), но прежде всего на процессы (20%) и людей (70%) — именно поэтому 95% пилотов проваливаются, а наши клиенты попадают в 5% прибыльных.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">Чем «Лайт-аудит» отличается от комплексного?</summary>
+          <div class="faq__body">
+            <p><strong>Лайт-аудит</strong> — фокусный разбор одной функции или отдела: ищем 2–3 задачи с быстрым ROI и выдаём дорожную карту. Горизонт окупаемости — 3 месяца.</p>
+            <p><strong>Комплексный аудит</strong> — глубокий редизайн всей операционной цепочки и IT-ландшафта, стратегия AI-driven трансформации и сопровождение внедрения. Подходит компаниям, готовым к масштабным изменениям.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">Можно ли работать с ИИ без передачи данных за рубеж?</summary>
+          <div class="faq__body">
+            <p>Да. Мы строим локальные (on-premise) решения на российских серверах: корпоративные базы знаний, RAG-системы, автономную транскрибацию переговоров. Используем открытые LLM, YandexGPT и GigaChat — без передачи конфиденциальных документов в публичные зарубежные облака.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">Что такое «теневой ИИ» и почему это риск?</summary>
+          <div class="faq__body">
+            <p>Теневой ИИ — ситуация, когда сотрудники массово используют личные подписки ChatGPT, Claude и других сервисов для рабочих задач. По данным исследований, это происходит у <strong>90% компаний</strong>.</p>
+            <p>Риск — утечка корпоративных документов, персональных данных клиентов и коммерческой тайны в публичные модели. Аудит выявляет эти процессы и переводит их в управляемую корпоративную среду.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">Почему 95% GenAI-пилотов не доходят до прибыли?</summary>
+          <div class="faq__body">
+            <p>По данным MIT и BCG, основные причины: отсутствие интеграции с реальными бизнес-процессами, нехватка внутренних компетенций, сопротивление команды и инвестиции в технологии вместо людей.</p>
+            <p>Мы применяем правило <strong>10·20·70</strong>: 10% бюджета — технологии, 20% — процессы, 70% — люди. Такой подход выводит пилот из чистилища.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">За какой срок ИИ начнёт окупаться?</summary>
+          <div class="faq__body">
+            <p>При правильном выборе задачи по методологии Лайт-аудита первые измеримые результаты появляются через <strong>4–6 недель</strong> после старта, а полный возврат инвестиций — в горизонте 3 месяцев.</p>
+            <p>Для комплексных трансформаций горизонт ROI — 6–12 месяцев, но и масштаб эффекта кратно больше.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">С какими отделами вы работаете?</summary>
+          <div class="faq__body">
+            <p>Бэк-офис (−40% рутины, −60% времени обработки), продажи (×2 время с клиентом, +30% win-rate, автозаполнение CRM), маркетинг (×3 объём контента, +25% конверсия, ИИ-сегментация).</p>
+            <p>Также внедряем ИИ-ассистентов, симуляторы для обучения, автоматизацию финансового аудита и анализ конкурентов.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__summary">Какие технологии вы используете?</summary>
+          <div class="faq__body">
+            <p>Мы подбираем стек под задачу: <strong>YandexGPT</strong> и <strong>GigaChat</strong> для on-premise сценариев в РФ, открытые LLM (Llama, Mistral, Qwen), <strong>RAG-архитектуры</strong> для корпоративных баз знаний, цифровые аватары для видео, автономных агентов на LangChain и LlamaIndex, локальные системы транскрибации.</p>
+            <p>Подробнее — <a href="/technologies.html">на странице «Технологии»</a>.</p>
+          </div>
+        </details>
 
       </div>
     </div>
@@ -626,7 +1140,7 @@
               <input class="form__check" type="checkbox" id="f-privacy" name="privacy" required>
               <label class="form__check-label" for="f-privacy">
                 Согласен на обработку персональных данных согласно
-                <a href="#privacy" class="form__link">Политике конфиденциальности</a>
+                <a href="/privacy.html" class="form__link">Политике конфиденциальности</a>
               </label>
               <div class="form__error" id="err-privacy"></div>
             </div>
@@ -648,7 +1162,7 @@
 
           <div class="contact__alt">
             Или напишите напрямую:
-            <a href="https://t.me/SmitAnin" class="contact__alt-link" rel="noopener noreferrer">
+            <a href="https://t.me/SmitAnin" class="contact__alt-link" target="_blank" rel="noopener noreferrer">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM12.615 6.435L11.37 12.405C11.28 12.81 11.04 12.915 10.695 12.72L8.895 11.4L8.025 12.24C7.92 12.345 7.83 12.435 7.635 12.435L7.755 10.605L11.16 7.53C11.31 7.395 11.13 7.32 10.935 7.455L6.75 10.095L4.98 9.54C4.575 9.42 4.56 9.135 5.07 8.94L12.105 6.195C12.45 6.075 12.75 6.27 12.615 6.435Z" fill="#60A5FA"/></svg>
               Telegram
             </a>
@@ -666,7 +1180,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="/" class="nav__logo" aria-label="ANV-Ai — на главную">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
             <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
             <path d="M10 22L16 10L22 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M12 18H20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
@@ -678,7 +1192,14 @@
       </div>
       <div class="footer__links">
         <a href="#methodology">Методология</a>
-        <a href="#services">Услуги</a>
+        <a href="#competencies">Компетенции</a>
+        <a href="/services/ai-audit-light.html">Лайт-аудит</a>
+        <a href="/services/ai-audit-full.html">Комплексный аудит</a>
+        <a href="/technologies.html">Технологии</a>
+        <a href="/cases/">Кейсы</a>
+        <a href="/blog/">Блог</a>
+        <a href="/about.html">О нас</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Контакт</a>
         <a href="/privacy.html">Политика конфиденциальности</a>
       </div>
